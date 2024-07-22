@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  background-color: lightgray;
+}
+
+h2 {
+  color: #4f4f4f;
+}
+
+h3 {
+  color: #4f4f4f;
+}
+
+h4 {
+  color: lightgray;
+}
+
+img {
+  width: 100%;
+}
+
+progress {
+  width: 100%;
+}
+
+p {
+  color: #828282;
+  font-size: large;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+@media (max-width: 1024px) {
+  .container__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 425px) {
+  .container__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.subcontainer {
+  margin-top: 2rem;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.container__skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+@media (max-width: 1024px) {
+  .container__skills {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+  }
+}
+
+.container__design {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 1.5rem;
+}
+
+.design {
+  align-self: flex-start;
+}
+
+.contact-icon {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 1.5rem;
+}
+
+.grid_projects {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 4rem;
+}
+@media (max-width: 1024px) {
+  .grid_projects {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.grid-blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.5rem;
+}
+@media (max-width: 1024px) {
+  .grid-blog {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.grid-experiencie {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-top: 1.5rem;
+}
+@media (max-width: 1024px) {
+  .grid-experiencie {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+.profile > H2 {
+  margin-top: 2rem;
+}
+
+.contact {
+  margin-top: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.profile > p {
+  font-size: larger;
+}
+
+.contact-icon > img {
+  width: 30px;
+  height: 30px;
+}
+
+.container-text {
+  padding-left: 3rem;
+}
+
+.container-text > h2 {
+  margin-top: 3rem;
+}
+
+.container-text > p {
+  margin-top: 3rem;
+}
+
+.btn-demo {
+  margin-top: 3rem;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  background-color: #2f80ed;
+  color: white;
+  border: 0;
+}
+
+.btn-code {
+  margin-top: 4rem;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  background-color: white;
+  color: #2f80ed;
+  border-color: #2f80ed;
+}
+
+.experience-text > h3 {
+  margin-top: 1rem;
+}
+
+.experience-text > p {
+  margin-top: 3rem;
+}
+
+.Hobbies {
+  margin-top: 2rem;
+}
+
+.Hobbies > h3 {
+  margin-top: 2rem;
+}
+
+.Hobbies > p {
+  margin-top: 1.5rem;
+}
+
+.blog-text > p {
+  margin-top: 2rem;
+}
+
+.blog-text > H2 {
+  margin-top: 3rem;
+}
+
+.enlace {
+  margin-top: 2rem;
+}
+
+.enlace > a {
+  text-decoration: none;
+  color: #2f80ed;
+  font-weight: 500;
+}/*# sourceMappingURL=styles.css.map */

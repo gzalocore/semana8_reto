@@ -1,0 +1,93 @@
+@mixin rwd($breakpoint) {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container__grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    @include rwd(1024px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @include rwd(425px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.container__column-1 {
+
+}
+
+.container__column-2 {
+
+    }
+
+.subcontainer{
+    margin-top: 2rem;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.container__skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    @include rwd(1024px){
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 1rem;
+    }
+}
+
+.container__design {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 1.5rem;
+}
+
+.design{
+    align-self: flex-start;
+}
+
+.contact-icon{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 1.5rem;
+}
+
+.grid_projects{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 4rem;
+    @include rwd(1024px){
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+.grid-blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1.5rem;
+    @include rwd(1024px){
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+.grid-experiencie{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-top: 1.5rem;
+    @include rwd(1024px){
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
